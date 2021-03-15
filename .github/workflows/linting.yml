@@ -1,48 +1,17 @@
+on: [push, pull_request]
 
-name: pylinter
-author: Alexander Damiani
-description: Lint python projects with flake8, mypy, and isort. The build will fail on violations.
-branding:
-  color: 'gray-dark'
-  icon: 'check-circle'
+jobs:
+  python-lint:
+    runs-on: ubuntu-latest
+    name: CI workflow
+    steps:
+    - name: checkout source repo
+      uses: actions/checkout@v2
 
-inputs:
-  python-root:
-    description: 'directory to run linting on'
-    required: false
-    default: '.'
-  flake8-flags:
-    description: 'flake8 flags'
-    required: false
-    default: ''
-  mypy-flags:
-    description: 'mypy flags'
-    required: false
-    default: ''
-  fail-on-isort:
-    description: 'optional exit on isort errors'
-    required: false
-    default: false
-  skip-flake8:
-    description: 'skip flake8 checks'
-    required: false
-    default: false
-  skip-mypy:
-    description: 'skip mypy checks'
-    required: false
-    default: false
-  skip-isort:
-    description: 'skip isort checks'
-    required: false
-    default: false
-runs:
-  using: 'docker'
-  image: 'Dockerfile'
-  args:
-    - ${{ inputs.python-root }}
-    - ${{ inputs.flake8-flags }}
-    - ${{ inputs.mypy-flags }}
-    - ${{ inputs.fail-on-isort }}
-    - ${{ inputs.skip-flake8 }}
-    - ${{ inputs.skip-mypy }}
-    - ${{ inputs.skip-isort }}
+    - name: linting
+      uses: alexanderdamiani/pylinter@v1.1.0
+      with:
+        python-root: '.'
+        flake8-flags: '--count --show-source --statistics'
+        mypy-flags: '--ignore-missing-imports'
+        fail-on-isort: true
