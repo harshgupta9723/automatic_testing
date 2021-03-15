@@ -8,7 +8,7 @@ def main():
     b = a-b
     a = a-b
 
-    print("after swap values a = ", a,"and b = ", b)
+    print("after swap values ->a = ", a,"and b = ", b)
 
 if __name__ == "__main__":
     main()
