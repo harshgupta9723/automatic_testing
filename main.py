@@ -1,6 +1,4 @@
-import os
 import re
 
-print("Hello world")
-
-      
+x = 'string'
+print(re.split(x))
