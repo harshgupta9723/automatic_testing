@@ -1,4 +1,4 @@
 import re
 
 x = 'string'
-print(re.split(x))
+print(x.split())
