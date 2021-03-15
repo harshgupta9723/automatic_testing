@@ -1,2 +1,2 @@
-x = 'string'
+x = 'latest'
 print(x.split())
