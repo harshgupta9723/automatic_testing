@@ -1,0 +1,14 @@
+[Unit]
+Description=testing
+After=network.target
+
+[Service]
+Restart=on-failure
+RestartSec=5s
+Type=simple
+User=vagrant
+WorkingDirectory=/home/harsh/rank_estimator
+ExecStart=/home/harsh/rank_estimator/main.py
+
+[Install]
+WantedBy=multi-user.target
