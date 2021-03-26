@@ -8,7 +8,7 @@ def get_result(sample_input):
     return final
 
 
-app=Flask(__name__)
+app = Flask(__name__)
 
 
 @app.route('/', methods=['POST', 'GET'])
