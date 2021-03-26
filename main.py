@@ -14,7 +14,7 @@ app = Flask(__name__)
 @app.route('/', methods=['POST', 'GET'])
 
 def education_level():
-    
+    """description """
     sample_input = request.form.get("input")
     result = get_result(sample_input)
     result_dict = {"updated_test": result}
