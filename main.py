@@ -18,5 +18,6 @@ def education_level():
     result_dict = {"updated_test": result}
     return jsonify(result_dict)
 
+
 if __name__ == "__main__":
     app.run(port=5080)
