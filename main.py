@@ -15,7 +15,7 @@ def education_level():
 
     sample_input = request.form.get("input")
     result = get_result(sample_input)
-    result_dict = {"updated" : result }
+    result_dict = {"updated_test" : result }
     return jsonify(result_dict)
 
 if __name__ == "__main__":
