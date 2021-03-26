@@ -13,6 +13,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['POST', 'GET'])
 
+
 def education_level():
     sample_input = request.form.get("input")
     result = get_result(sample_input)
@@ -20,4 +21,6 @@ def education_level():
     return jsonify(result_dict)
 
 if __name__ == "__main__":
+
+    
     app.run(port=5080)
