@@ -2,10 +2,9 @@
 
 cd /home/harsh/rank_estimator
 
-#touch now.txt
-
 # # Activate virtual environment
-source venv/bin/activate
+virtualenv -q -p /usr/bin/python3.5 $1
+source $1/bin/activate
 
 # Install requirements.txt
 pip install -r requirements.txt
