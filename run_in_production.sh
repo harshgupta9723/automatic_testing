@@ -4,7 +4,7 @@
 source venv/bin/activate
 
 # Install requirements.txt
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 
 # run API
 python3 main.py
