@@ -2,6 +2,8 @@
 
 cd /home/harsh/rank_estimator
 
+touch now.txt
+
 # # Activate virtual environment
 # source venv/bin/activate
 
