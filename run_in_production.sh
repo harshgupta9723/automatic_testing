@@ -6,7 +6,7 @@ python3 -m venv venv
 
 source venv/bin/activate
 
-touch text.py
+touch text_1.py
 
 # Activate virtual environment
 # source venv/bin/activate
