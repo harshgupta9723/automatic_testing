@@ -15,7 +15,7 @@ app = Flask(__name__)
 def education_level():
     sample_input = request.form.get("input")
     result = get_result(sample_input)
-    result_dict = {"updated_test": result}
+    result_dict = {"updated": result}
     return jsonify(result_dict)
 
 
