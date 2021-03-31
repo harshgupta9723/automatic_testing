@@ -2,7 +2,7 @@
 
 cd /home/harsh/rank_estimator
 
-python3 -m pip install virtualenv
+sudo apt-get install python3-venv
 
 python3 -m venv venv
 
