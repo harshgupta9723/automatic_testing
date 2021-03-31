@@ -10,4 +10,4 @@ source venv/bin/activate
 # Install requirements.txt
 pip3 install -r requirements.txt
 
-systemctl start main.service
+sudo systemctl start main.service
