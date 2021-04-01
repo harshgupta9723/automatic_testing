@@ -1,23 +1,16 @@
-from flask import Flask, request, jsonify
-from datetime import datetime
+def add(x, y):
+    return x + y
 
 
-def get_result(sample_input):
-    x = datetime.today().strftime('%Y-%m-%d-%H:%M:%S')
-    final = 'today' + x
-    return final
+def subtract(x, y):
+    return x - y
 
 
-app = Flask(__name__)
+def multiply(x, y):
+    return x * y
 
 
-@app.route('/', methods=['POST', 'GET'])
-def education_level():
-    sample_input = request.form.get("input")
-    result = get_result(sample_input)
-    result_dict = {"updated_test": result}
-    return jsonify(result_dict)
-
-
-if __name__ == "__main__":
-    app.run(port=5080)
+def divide(x, y):
+    if y == 0:
+        raise ValueError('Can not divide by zero!')
+    return x / y
