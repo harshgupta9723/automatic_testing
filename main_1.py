@@ -11,7 +11,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['POST', 'GET'])
 def education_level():
-    sample_input = request.form.get("input")
+    sample_input=request.form.get("input")
     result = get_result(sample_input)
     result_dict = {"updated": result}
     return jsonify(result_dict)
