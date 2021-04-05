@@ -16,7 +16,7 @@ jobs:
         flake8-flags: '--count --show-source --statistics'
         mypy-flags: '--ignore-missing-imports'
         fail-on-isort: false
-        skip-flake8: true
+        skip-flake8: false
         skip-mypy: true
         skip-isort: true
 
