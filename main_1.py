@@ -8,7 +8,7 @@ def get_result(sample_input):
     return final
 app = Flask(__name__)
 
-
+# comment commentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcomment
 @app.route('/', methods=['POST', 'GET'])
 def education_level():
     sample_input = request.form.get("input")
