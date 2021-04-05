@@ -6,8 +6,6 @@ def get_result(sample_input):
     x = datetime.today().strftime('%Y-%m-%d-%H:%M:%S')
     final = 'today' + x
     return final
-
-
 app = Flask(__name__)
 
 
