@@ -16,9 +16,6 @@ jobs:
         flake8-flags: '--count --show-source --statistics'
         mypy-flags: '--ignore-missing-imports'
         fail-on-isort: false
-        skip-flake8: true
-        skip-mypy: false
-        skip-isort: false
 
 # reference links:
 #   https://github.com/alexanderdamiani/pylinter
