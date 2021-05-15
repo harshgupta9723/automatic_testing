@@ -8,7 +8,7 @@ RestartSec=5s
 Type=simple
 User=vagrant
 WorkingDirectory=/home/harsh/rank_estimator
-ExecStart=/home/harsh/rank_estimator/main.py
+ExecStart=/home/harsh/rank_estimator/main_1.py
 
 [Install]
 WantedBy=multi-user.target
