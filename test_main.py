@@ -1,7 +1,7 @@
 import unittest
 import main
 
-class TestClac(unittest.TestCase):
+class TestClass(unittest.TestCase):
 
     def test_add(self):
         self.assertEqual(main.add(10, 5), 15)
